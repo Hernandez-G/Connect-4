@@ -1,0 +1,15 @@
+main {
+    height: 500px;
+    width: 500px;
+    border: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 5fr 5fr 5fr; 
+
+}
+
+#msg{
+    font-size: 30px;
+    
+}
+
