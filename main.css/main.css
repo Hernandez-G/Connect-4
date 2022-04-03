@@ -1,32 +1,60 @@
 body {
-    width: fit-content;
-    height: 900px;
+    display: grid;
+    font-family: 'Rubik Puddles', cursive;
+    justify-content: center;
+    border: solid;
+    padding: 50px;
  
+    
 }
+
 
 .gameBoard {
     height: 650px;
     width: 650px;
-    border: solid;
-    margin:auto;
+    border: 3px solid;
+    margin: 50px;
+    padding: 3px;
     display: grid;
+    background-color: rgb(0, 123, 224);
     grid-template-columns: 108px 108px 108px 108px 108px 108px;
     grid-template-rows: 108px 108px 108px 108px 108px 108px;
 }
 
 
-h1 {
-    font-size: 40px;
+header {
+    font-size: 95px;
+    font-family: 'Rubik Puddles', cursive;
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 32, 56);
+    font-weight: bold;
     
 }
 
-#circle {
+.circle {
     border: solid;
     border-radius: 50%;
-    margin: 5px;   
+    margin: 5px;  
+    display: grid; 
+    background-color: rgb(55, 116, 230);
+}
+
+.circle:hover {
+    color: red;
+    background: chartreuse;
+}
+
+h1 {
+    display: grid;
+    position: relative;
+
 
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 32px;
+    display: grid;
+    grid-area: header2;
+
 }
