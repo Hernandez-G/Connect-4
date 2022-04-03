@@ -1,15 +1,32 @@
-main {
-    height: 500px;
-    width: 500px;
-    border: solid;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 5fr 5fr 5fr; 
-
+body {
+    width: fit-content;
+    height: 900px;
+ 
 }
 
-#msg{
-    font-size: 30px;
+.gameBoard {
+    height: 650px;
+    width: 650px;
+    border: solid;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 108px 108px 108px 108px 108px 108px;
+    grid-template-rows: 108px 108px 108px 108px 108px 108px;
+}
+
+
+h1 {
+    font-size: 40px;
     
 }
 
+#circle {
+    border: solid;
+    border-radius: 50%;
+    margin: 5px;   
+
+}
+
+h2 {
+    font-size: 20px;
+}
