@@ -1,60 +1,66 @@
 body {
-    display: grid;
+    display: flex;
+    grid-area: auto;
     font-family: 'Rubik Puddles', cursive;
     justify-content: center;
-    border: solid;
+    border: solid maroon;
     padding: 50px;
- 
-    
 }
+
 
 
 .gameBoard {
     height: 650px;
     width: 650px;
     border: 3px solid;
+    border-radius: 2%;
     margin: 50px;
     padding: 3px;
     display: grid;
-    background-color: rgb(0, 123, 224);
+    background-color: rgb(0, 44, 189);
     grid-template-columns: 108px 108px 108px 108px 108px 108px;
     grid-template-rows: 108px 108px 108px 108px 108px 108px;
 }
 
+.gameBoard:after {
+    width: 200px;
+    height: 200px;
+    background: #f06d06;
+    position: relative;
+    border: 5px solid blue;  
+    margin: 20px;
+}
+
 
 header {
-    font-size: 95px;
+    font-size: 70px;
     font-family: 'Rubik Puddles', cursive;
-    display: flex;
+    display: grid;
     justify-content: center;
-    color: rgb(3, 32, 56);
-    font-weight: bold;
-    
-}
-
-.circle {
-    border: solid;
-    border-radius: 50%;
-    margin: 5px;  
-    display: grid; 
-    background-color: rgb(55, 116, 230);
-}
-
-.circle:hover {
-    color: red;
-    background: chartreuse;
+    color: rgb(12, 89, 204);
+    font-weight: bold;  
 }
 
 h1 {
-    display: grid;
-    position: relative;
-
-
+    font-size: 25px;
+    justify-content: flex-end; 
 }
 
 h2 {
     font-size: 32px;
     display: grid;
     grid-area: header2;
-
 }
+.circle {
+    border: solid;
+    border-radius: 50%;
+    margin: 5px;  
+    display: grid; 
+    background-color: rgb(255, 255, 255);
+}
+
+.circle:hover {
+    color: rgb(190, 9, 9);
+    background: chartreuse;
+}
+
