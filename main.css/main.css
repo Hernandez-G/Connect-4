@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: grid;
     grid-area: auto;
     font-family: 'Rubik Puddles', cursive;
     justify-content: center;
@@ -7,7 +7,24 @@ body {
     padding: 50px;
 }
 
+/* .players {
+    display: flex;
+    font-size: 20px;
+    -ms-flex-align: end;
 
+} */
+
+#P1 {
+    display: flex;
+    flex-flow: column;
+}
+
+#P2 {
+    display: flex;
+    flex-direction: column-reverse;
+    -ms-flex-align: end;
+
+}
 
 .gameBoard {
     height: 650px;
@@ -61,6 +78,6 @@ h2 {
 
 .circle:hover {
     color: rgb(190, 9, 9);
-    background: chartreuse;
+   
 }
 
