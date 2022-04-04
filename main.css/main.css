@@ -48,6 +48,14 @@ body {
     margin: 20px;
 }
 
+.column {
+    cursor: pointer;
+  }
+  
+  .column rect.play:hover {
+    fill-opacity: 0.75;
+  }
+
 
 header {
     font-size: 70px;
@@ -81,3 +89,8 @@ h2 {
    
 }
 
+button {
+    width: 50px;
+    display: grid;
+    justify-content: center;
+}
