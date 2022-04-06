@@ -9,7 +9,6 @@ let result;  //P1/P2, 'T' = TIE, null = G in P
 const circleEls = document.querySelectorAll('.circle');
 const msgEl = document.querySelector('h3');
 
-
 document.querySelector('.gameBoard').addEventListener('click', handlePlayerTurn);
 resetBtn.addEventListener('click', init);
 
@@ -46,6 +45,7 @@ function handlePlayerTurn(evt) {
 
     render();
 }
+
   
 function winner(idx, inc) {
     let checkIdx = idx;
@@ -80,3 +80,4 @@ function winner(idx, inc) {
        msgEl.innerText = '';
    }
   };
+
