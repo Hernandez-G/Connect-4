@@ -1,5 +1,5 @@
-const PLAYER1 = 'red';
-const PLAYER2 = 'blue';
+const PLAYER1 = 'RED';
+const PLAYER2 = 'BLUE';
 
 
 let turn; // PLAYER 1 o PLAYER2
@@ -12,9 +12,6 @@ const msgEl = document.querySelector('h3');
 
 document.querySelector('.gameBoard').addEventListener('click', handlePlayerTurn);
 resetBtn.addEventListener('click', init);
-
-
-
 
 
 init();
@@ -76,10 +73,6 @@ function winner(idx, inc) {
   function render() {
     circleEls.forEach(function(circleEl, idx) {
       circleEl.style.backgroundColor = gameBoard[idx];
-      console.log(gameBoard[idx]);
-        if (gameBoard[idx] === null) {
-            circleEl.style.backgroundColor = 'white'
-        }
     });
 
    if (result) {msgEl.innerText = `${result} WINS!`;}

@@ -5,6 +5,7 @@ body {
     justify-content: center;
     padding: 50px;
     background-color: #f06d06;
+    
 }
 
 
@@ -20,7 +21,9 @@ body {
     background-color: rgb(0, 44, 189);
     grid-template-columns: 108px 108px 108px 108px 108px 108px;
     grid-template-rows: 108px 108px 108px 108px 108px 108px;
+    box-shadow: 0 0 50px 30px #aeec03;
 }
+
 
 .gameBoard:after {
     width: 200px;
@@ -51,11 +54,13 @@ header {
     margin: 5px;  
     display: grid; 
     background-color: rgb(255, 238, 223);
+  
 }
+
+
 
 .circle:hover {
     color: rgb(255, 15, 15);
-   
 }
 
 button {
