@@ -3,28 +3,11 @@ body {
     grid-area: auto;
     font-family: 'Rubik Puddles', cursive;
     justify-content: center;
-    border: solid maroon;
     padding: 50px;
+    background-color: #f06d06;
 }
 
-/* .players {
-    display: flex;
-    font-size: 20px;
-    -ms-flex-align: end;
 
-} */
-
-#P1 {
-    display: flex;
-    flex-flow: column;
-}
-
-#P2 {
-    display: flex;
-    flex-direction: column-reverse;
-    -ms-flex-align: end;
-
-}
 
 .gameBoard {
     height: 650px;
@@ -42,55 +25,49 @@ body {
 .gameBoard:after {
     width: 200px;
     height: 200px;
-    background: #f06d06;
+    background: #dd6103;
     position: relative;
     border: 5px solid blue;  
     margin: 20px;
 }
 
-.column {
-    cursor: pointer;
-  }
-  
-  .column rect.play:hover {
-    fill-opacity: 0.75;
-  }
 
 
 header {
     font-size: 70px;
     font-family: 'Rubik Puddles', cursive;
-    display: grid;
+    display: flex;
     justify-content: center;
-    color: rgb(12, 89, 204);
+    color: rgb(255, 255, 255);
     font-weight: bold;  
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
-h1 {
-    font-size: 25px;
-    justify-content: flex-end; 
-}
-
-h2 {
-    font-size: 32px;
-    display: grid;
-    grid-area: header2;
-}
 .circle {
     border: solid;
     border-radius: 50%;
     margin: 5px;  
     display: grid; 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 238, 223);
 }
 
 .circle:hover {
-    color: rgb(190, 9, 9);
+    color: rgb(255, 15, 15);
    
 }
 
 button {
     width: 50px;
-    display: grid;
+    display: inline-grid;
     justify-content: center;
+    font-family: 'Rubik Puddles', cursive;
+}
+
+h3 {
+    display: grid;
+    font-size: 35px;
+    align-items: center;
+    justify-content: flex;
 }
