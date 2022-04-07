@@ -33,27 +33,20 @@ function init() {
 function handlePlayerTurn(evt) {
     const rowIdx = parseInt(evt.target.id);
     const colIdx = parseInt(evt.target.parentElement.id);
-    console.log(rowIdx, colIdx);
-    if (result) {
-        //  return;
-} else{
+    // console.log(rowIdx, colIdx);
+    if (turn === 1) return;
+    // const colArr = gameBoard[colIdx];
     gameBoard[colIdx][rowIdx] = turn;
-    turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
+    console.log(turn);
+        turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
 
     render();
-}
-
-  
-function winner() {
-    
-
-
-}
 
   function render() {
     columnEls.forEach(function(columnEl, colIdx) {
       Array.from(columnEl.children).forEach(function(rowEl, rowIdx){
         rowEl.style.backgroundColor = gameBoard[colIdx][rowIdx];
+        document.getElementsByClassName(`column${colIdx}row${rowIdx}`);
 
       })
     });
