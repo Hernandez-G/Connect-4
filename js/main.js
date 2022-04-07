@@ -8,8 +8,11 @@ let result;  //P1/P2, 'T' = TIE, null = G in P
 
 const columnEls = document.querySelectorAll('.column');
 const msgEl = document.querySelector('h3');
+// const markerEls = [...document.querySelectorAll('#markers > div')];
+
 
 document.querySelector('.gameBoard').addEventListener('click', handlePlayerTurn);
+// document.getElementById('markers').addEventListener('click', handleDrop);
 resetBtn.addEventListener('click', init);
 
 
@@ -36,17 +39,19 @@ function handlePlayerTurn(evt) {
     // console.log(rowIdx, colIdx);
     if (turn === 1) return;
     // const colArr = gameBoard[colIdx];
-    gameBoard[colIdx][rowIdx] = turn;
     console.log(turn);
-        turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
-
+    gameBoard[colIdx][rowIdx] = turn;
+    turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
+    if (result) true;   
     render();
+
+
 
   function render() {
     columnEls.forEach(function(columnEl, colIdx) {
-      Array.from(columnEl.children).forEach(function(rowEl, rowIdx){
+      Array.from(columnEl.children).forEach(function(rowEl, rowIdx) {
         rowEl.style.backgroundColor = gameBoard[colIdx][rowIdx];
-        document.getElementsByClassName(`column${colIdx}row${rowIdx}`);
+        // document.getElementsByClassName(`column${colIdx}row${rowIdx}`);
 
       })
     });
@@ -56,3 +61,20 @@ function handlePlayerTurn(evt) {
        msgEl.innerText = '';
    }
   };
+
+  // function handleDrop(evt) {
+  //   const colIdx = parseInt(evt.target.parentElement.id);
+  //   if (colIdx === -1) return;
+  //   const colArr = gameBoard[colIdx];
+  //   const rowIdx = parseInt(evt.target.id);
+  //   colArr[rowIdx] = turn;
+  //   render();
+  //   turn *= -1;
+  // }
+
+  function renderMarkers() {
+    markerEls.forEach(function(markerEl, colIdx) {
+      markerEl.style.visibility = board[colIdx].includes(0) ? 'visible' : 'hidden';
+      console.log(renderMarkers);
+    });
+  }
