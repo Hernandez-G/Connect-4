@@ -96,13 +96,17 @@ h1 {
     flex-direction: column;
 }
 
-/* button {
+section > aside {
+    display: inline-block;
+    grid-template-columns: 200px, 200px 200px 200px;
+    grid-template-rows: 200px, 200px;
+    font-size: 35px;
+}
+
+aside {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    text-shadow: 2px 12px 5px #000000;
-    font-family: 'Rubik Puddles', cursive;
-    font-size: 50px;
-} */
+    margin: 15px;
+    border: 20px;
+    height: 250px;
+    width: 300px;
+}
