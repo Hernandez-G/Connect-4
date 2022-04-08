@@ -48,6 +48,7 @@ article {
 header {
     height: min-content;
     margin-right: 25px;
+    margin-left: 25px;
     display: flex;
     justify-content: center;
     font-family:'Rubik Puddles', cursive;
