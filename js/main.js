@@ -33,6 +33,7 @@ function init() {
 }
 
 function handlePlayerTurn(evt) {
+  if (result) return;
   if (!evt.target.classList.contains('circle')) return;
   const colIdx = parseInt(evt.target.parentElement.id);
   const colArr = gameBoard[colIdx];
@@ -46,53 +47,11 @@ function handlePlayerTurn(evt) {
 }
 
 
-// function checkVert(colIdx, rowIdx) {
-//   //vertical
-//   const player = gameBoard[colIdx][rowIdx];
-//   let count = 0;
-//   let idx = rowIdx + 1;
-//   while (idx < gameBoard[rowIdx].length && gameBoard[rowIdx][idx] === player) {
-//     count++;
-//     idx++;
-    
-    
-//     idx = rowIdx - 1;
-//     while (idx >= null && gameBoard[rowIdx][idx] === player) {
-//       count++;
-//       idx--;
-//     }
-//     return count === 4 ? player : null;
-//   }
-// }
-
-// function checkHorizon(colIdx, rowIdx) {
-//   const player = board[colIdx][rowIdx];
-//   let count = 1;
-//   //count right
-//   let idx = colIdx + 1;
-//   while (idx < board.length && board[idx][rowIdx] === player) {
-//     count++;
-//     idx++;
-    
-//     //count left
-//     idx = colIdx - 1;
-//     while (idx >= 0 && board[idx][rowIdx] === player) {
-//       count++;
-//       idx--;
-//     }
-//     return count >= 4 ? player : null;
-//   }
-// }
-
-
-
-
 function checkVertWin(colIdx, rowIdx) {
   const player = gameBoard[colIdx][rowIdx];
   let count = 1; 
-  //count right
   let idx = rowIdx + 1; 
-  while (idx < gameBoard[idx].length && gameBoard[colIdx][idx] === player) {
+  while (idx < gameBoard.length && gameBoard[colIdx][idx] === player) {
     count++;
     idx++;
   }
@@ -104,11 +63,10 @@ function checkVertWin(colIdx, rowIdx) {
   return count >= 4 ? result = player : null;
 }
 
-//opposite
+
 function checkHorzWin(colIdx, rowIdx) {
   const player = gameBoard[colIdx][rowIdx];
   let count = 1; 
-  //count right
   let idx = colIdx + 1; 
   while (idx < gameBoard.length && gameBoard[idx][rowIdx] === player) {
     count++;
@@ -121,12 +79,83 @@ function checkHorzWin(colIdx, rowIdx) {
   }
   return count >= 4 ? result = player : null;
 }
-function getWinner(colIdx, rowIdx) {
-  return checkVertWin(colIdx, rowIdx)
-    || checkHorzWin(colIdx, rowIdx);
+
+
+
+
+function checkDiagRight(colIdx, rowIdx) {
+  const player = gameBoard[colIdx][rowIdx];
+  let count = 1; 
+  //count right
+  let idx1 = colIdx - 1; 
+  let idx2 = rowIdx + 1;
+  while (idx1 >= 0  && idx2 < gameBoard[0].length && gameBoard[idx1][idx2] === player) {
+    count++;
+    idx1--;
+    idx2++;
+  }
+  idx1 = colIdx + 1; 
+  idx2 = rowIdx - 1
+  while (idx1 < gameBoard.length && idx2 >= 0 && gameBoard[idx1][idx2] === player) {
+    count++;
+    idx1++;
+    idx2--;
+  }
+  return count >= 4 ? result = player : null; 
+}
+
+function checkDiagLeft(colIdx, rowIdx) {
+  const player = gameBoard[colIdx][rowIdx];
+  let count = 1; 
+  //count right
+  let idx1 = colIdx - 1; 
+  let idx2 = rowIdx + 1;
+  while (idx1 >= 0  && idx2 < gameBoard[0].length && gameBoard[idx1][idx2] === player) {
+    count++;
+    idx1--;
+    idx2++;
+  }
+  idx1 = colIdx + 1; 
+  idx2 = rowIdx - 1
+  while (idx1 < gameBoard.length && idx2 >= 0 && gameBoard[idx1][idx2] === player) {
+    count++;
+    idx1++;
+    idx2--;
+  }
+  return count >= 4 ? result = player : null; 
 }
 
 
+
+function checkDiagLeft(colIdx, rowIdx) {
+  const player = board[colIdx][rowIdx];
+  let count = 1; 
+  //count right
+  let idx1 = colIdx - 1; 
+  let idx2 = rowIdx + 1;
+  while (idx1 >= 0  && idx2 < board[0].length && board[idx1][idx2] === player) {
+    count++;
+    idx1--;
+    idx2++;
+  }
+
+  idx1 = colIdx + 1; 
+  idx2 = rowIdx - 1
+  while (idx1 < board.length && idx2 >= 0 && board[idx1][idx2] === player) {
+    count++;
+    idx1++;
+    idx2--;
+  }
+  return count === 4 ? result = player : null; 
+}
+
+
+
+function getWinner(colIdx, rowIdx) {
+  return checkVertWin(colIdx, rowIdx)
+    || checkHorzWin(colIdx, rowIdx)
+    || checkDiagRight(colIdx, rowIdx)
+}
 
 
 
