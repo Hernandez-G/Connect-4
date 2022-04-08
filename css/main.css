@@ -4,24 +4,29 @@
 body {
     display: flex;
     flex-direction: row;
+    align-items: center;
     font-family: 'Rubik Puddles', cursive;
-    justify-content: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #f06d06;
     
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gameBoard {
     height: 650px;
     width: 650px;
-    border: -1px solid;
     border-radius: 2%;
     margin: 50px;
-    padding: 0;
     display: grid;
     background-color: rgb(0, 44, 189);
     grid-template-columns: 108px 108px 108px 108px 108px 108px;
-    box-shadow: 0 0 50px 30px #fcd93f;
+    box-shadow: 0 0 55px 40px #fcd93f;
 }
 
 .column {
@@ -41,15 +46,14 @@ body {
 
 
 header {
-    height:min-content;
+    height: min-content;
     font-size: 70px;
     margin-right: 25px;
-    font-family: 'Rubik Puddles', cursive;
+    font-family:'Rubik Puddles', cursive;
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
     font-weight: bold;  
-    color: white;
     text-shadow: 2px 2px 4px #000000;
     position: relative;
 }
@@ -66,6 +70,7 @@ header {
 
 .circle:hover {
     border-color: rgb(238, 83, 83);
+    padding: 1px;
 }
 
 
@@ -75,9 +80,7 @@ h3 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    border: solid #dd6103;
-    border-radius: 20%;
-    color:#f1e196;
+    color:#ffffff;
     text-shadow: 2px 2px 4px #000000;
     position: sticky;
 }
@@ -91,22 +94,17 @@ h3 {
 
 
 
-h1 {
-    display: flex;
-    flex-direction: column;
+
+button {
+    height: 25px;
+    width: 55px;
+    background-color: #ff7755;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 16px;
+    margin: 4px;
+    transition: 0.3s;
 }
 
-section > aside {
-    display: inline-block;
-    grid-template-columns: 200px, 200px 200px 200px;
-    grid-template-rows: 200px, 200px;
-    font-size: 35px;
-}
 
-aside {
-    display: flex;
-    margin: 15px;
-    border: 20px;
-    height: 250px;
-    width: 300px;
-}
+
