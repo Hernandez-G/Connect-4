@@ -86,22 +86,3 @@ h3 {
     align-items: center;
     justify-content: flex;
 }
-
-#markers {
-    display: grid;
-    grid-template-columns: repeat(10, 9.2vmin);
-    gap: 3.5vmin;
-    margin-top: 1vmin;
-  }
-#markers > div {
-    height: 16vmin;
-    border-width: 10vmin;
-    border-style: solid;
-    border-color: rgb(27, 1, 92) transparent transparent;
-    transform: scale(0.6);
-  }
-#markers > div:hover {
-    transform: scale(0.9);
-    transition: transform 150ms ease-in;
-    border-top-color: darkgray;
-  }
