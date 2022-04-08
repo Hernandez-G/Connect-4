@@ -4,29 +4,10 @@
 <h1>:pencil: Description</h1>
 <p>A classic two-player, family friendly game rendered digitally.</p>
 
-<details>
-<summary> :bar_chart: ERD</summary>
+<h2 align = "center">
+<h2>Screenshot<h2> 
 
-| Description | Screenshot |
-|------------ | ------------|
-| <h3 align="center">ERD</h3> | <img src="https://``github.com/amarpan/meet-your-classmates/raw/main/public/Screenshots/ERD.MYC.png" width="700"> |
-</details>
-
-<details>
-<summary> :art: Wireframes</summary>
-
-| Description | Screenshot |
-|------------ | ------------|
-| <h3 align="center">Home Page</h3> | https://github.com/Hernandez-G/Connect-Four/blob/main/planning/Connect%20Four%20Layout.png width="700"/>
-| <h3 align="center">Profile Page</h3> | <img src="https://github.com/amarpan/meet-your-classmates/raw/main/public/Screenshots/ProfilePage.Wireframe.MYC.png" width="700"> |
-</details>
-
-<details open>
-<summary> :gear: Functionality</summary>
-
-| Description | Screenshot |
-|------------ | ------------|
-| <h3 align="center">Feed Page</h3> | <img src="https://github.com/amarpan/meet-your-classmates/blob/main/public/Screenshots/FeedPage.png?raw=true" width="700"/> |
-| <h3 align="center">Profile Page</h3> | <img src="https://github.com/amarpan/meet-your-classmates/raw/main/public/Screenshots/ProfilePage.png" width="700"/> |
-</details>
-
+<h3> Technology Used: <h3>
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
