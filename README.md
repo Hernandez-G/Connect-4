@@ -15,5 +15,12 @@
 
 <h3>Rules</h3>
     Click the board and the players piece (red) drops down to its selected column. When it's the next players turn, the color of the piece changes (blue). Players can win either diagonally, horizontally, or vertically. When there is a winner, players wont be able to click on the board. The winning player will be displayed on the left side of the board. 
-<h4>PLAY NOW!</h4>
+<h4>Future Updates:</h4>
+<li>Add players score/tally scores</li>
+<li>Have an option to pick which color players want</li>
+<li>Make the players section box light up whenever its their turn</li>
+
+<h5>:link: PLAY NOW!</h5>
+<a href="https://hernandez-g.github.io/Connect-Four/">https://hernandez-g.github.io/Connect-Four/</a>
+
 
