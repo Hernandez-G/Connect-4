@@ -16,6 +16,6 @@
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
 <h4>Rules</h4>
-    1. Click the board and the players piece (red) drops down to its selected column. When it's the next players turn, the color of the piece changes (blue). Players can win either diagonally, horizontally, or vertically. When there is a winner, players wont be able to click on the board. The winning player will be displayed on the left side of the board. 
+    Click the board and the players piece (red) drops down to its selected column. When it's the next players turn, the color of the piece changes (blue). Players can win either diagonally, horizontally, or vertically. When there is a winner, players wont be able to click on the board. The winning player will be displayed on the left side of the board. 
 <h5>PLAY NOW!</h5>
 <h6></6>
