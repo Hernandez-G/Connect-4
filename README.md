@@ -7,7 +7,7 @@
 <h2 align = "center">
 <h2>Screenshot<h2> 
 
-<h3> Technology Used: </h3>
+<h3>Technology Used</h3>
 
 ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
@@ -16,5 +16,10 @@
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
 <h4>Rules</h4>
+    1. Click the board and the players piece (red) drops down to its selected column. 
+    2. When it's the next players turn, the color of the piece changes (blue). 
+    3. Players can win either diagonally, horizontally, or vertically. 
+    4. When there is a winner, players wont be able to click on the board. 
+    5. The winning player will be displayed on the left side of the board. 
 <h5>PLAY NOW!</h5>
 <h6></6>
