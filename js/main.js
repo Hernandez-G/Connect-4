@@ -172,3 +172,8 @@ function render() {
     msgEl.innerText = '';
   }
 }
+
+
+//timer
+
+
